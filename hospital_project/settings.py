@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'hospital_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hospital_db',  # MySQL 데이터베이스 이름
-        'USER': 'hospital_user',  # MySQL 사용자 이름
-        'PASSWORD': '0000',  # MySQL 비밀번호
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': 'hospital_db', 
+        'USER': 'hospital_user',  
+        'PASSWORD': '',  
+        'HOST': '',
+        'PORT': '',
     }
 }
 
@@ -107,8 +107,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/5.1/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
@@ -119,15 +117,11 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
